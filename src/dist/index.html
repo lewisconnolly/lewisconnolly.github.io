@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>devfolio</title>
+  <title>lewisconnolly.github.io</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.bundle.css">
@@ -107,7 +107,7 @@
               <article class="tile is-child notification">
                 <p class="title">Terrain Generation</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
+                  <img class="modal-trigger" data-target="project-3-modal" src="img/terrain-generation-cover.png">
                 </figure>
               </article>
             </div>
@@ -121,23 +121,23 @@
               <article class="tile is-child notification">
                 <p class="title">Reinforcement Learning Snake</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/project-4-cover.png">
+                  <img class="modal-trigger" data-target="project-4-modal" src="img/reinforcement-learning-snake-cover.png">
                 </figure>
               </article>
             </div>
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Client/server Pong</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-5-modal" src="img/project-5-cover.png">
+                <p class="title">Client-server Pong</p>
+                <figure class="image is-16by9">
+                  <img class="modal-trigger" data-target="project-5-modal" src="img/client-server-pong-cover.png">
                 </figure>
               </article>
             </div>
             <div class="tile is-parent">
               <article class="tile is-child notification">
                 <p class="title">Graphics Programming</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-6-modal" src="img/project-6-cover.png">
+                <figure class="image is-16by9">
+                  <img class="modal-trigger" data-target="project-6-modal" src="img/graphics-programming-cover.png">
                 </figure>
               </article>
             </div>
@@ -233,7 +233,7 @@
 
         <div id="project-1-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/procedural-caves/1.png">
+            <img src="img/carousel/procedural-caves/1.gif">
           </figure>
           <figure class="image is-4by3 carousel-cell">
             <img src="img/carousel/procedural-caves/2.png">
@@ -241,16 +241,25 @@
           <figure class="image is-4by3 carousel-cell">
             <img src="img/carousel/procedural-caves/3.png">
           </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/procedural-caves/4.png">
+          </figure>
         </div>
 
         <div class="content">
 
           <p>
-          As a Masters dissertation project, a tool was developed within Unity to procedurally generate 3D caves 
-          containing stalagmites and stalactites using cellular automata and isosurface algorithms. The tool
-          works by evolving a cellular automaton over a number of generations using multithreaded execution to
-          produce a 3D grid of values that is then polygonised by a marching cubes or dual contouring algorithm,
-          and rendered using custom shaders.
+          <a href="https://github.com/lewisconnolly/procedural-caves">github</a><br/>
+          </p>
+
+          <p>
+            As part of a Masters dissertation project, a tool was developed within Unity to procedurally generate 3D caves 
+            containing stalagmites and stalactites using cellular automata and isosurface algorithms.
+          </p>
+          <p>
+            The tool works by evolving a cellular automaton over a number of generations using multithreaded execution to
+            produce a 3D grid of values that is then polygonised by a marching cubes or dual contouring algorithm,
+            and rendered using custom shaders.
           </p>
 
           <p> Features: </p>
@@ -293,7 +302,7 @@
 
         <div id="project-2-modal-carousel" class="carousel">
           <figure class="image is-16by9 carousel-cell">
-            <img src="img/carousel/viva-las-mages/1.png">
+            <img src="img/carousel/viva-las-mages/1.gif">
           </figure>
           <figure class="image is-16by9 carousel-cell">
             <img src="img/carousel/viva-las-mages/2.png">
@@ -301,20 +310,27 @@
           <figure class="image is-16by9 carousel-cell">
             <img src="img/carousel/viva-las-mages/3.png">
           </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/viva-las-mages/4.png">
+          </figure>
         </div>
 
         <div class="content">
 
           <p>
-          <a href="https://vulpecula-games.itch.io/viva-las-mages">itch.io</a>
+          <a href="https://vulpecula-games.itch.io/viva-las-mages">itch.io</a><br/>
+          <a href="https://github.com/lewisconnolly/viva-las-mages">github</a>
           </p>
 
           <p>
-          As the lead programmer and co-designer in a team of 7 consisting of artists, designers and an audio specialist,
-          developed a vertical slice of a game over 12 weeks based on a novel concept featuring dungeon exploration, card
-          playing, and risk-reward mechanics. The end product has a playtime of around 25 minutes and contains components
-          such as an interaction system, inventory management, first-person movement, a poker-based card game with unique
-          rules, a merchant shop, and slot machines.
+            As the lead programmer and co-designer in a team of 7 consisting of artists, designers and an audio specialist,
+            developed a vertical slice of a game over 12 weeks based on a novel concept featuring dungeon exploration, card
+            playing, and risk-reward mechanics.
+          </p>
+          <p>
+            The end product has a playtime of around 25 minutes and contains components
+            such as an interaction system, inventory management, first-person movement, a poker-based card game with unique
+            rules, a merchant shop, and slot machines.
           </p>
 
           <p>
@@ -352,33 +368,60 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Terrain Generation</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
         <div id="project-3-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/terrain-generation/1.gif">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/terrain-generation/2.png">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/terrain-generation/3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/terrain-generation/4.png">
           </figure>
         </div>
 
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
+          <p>          
+          <a href="https://github.com/lewisconnolly/procedural-terrain">github</a>
+          </p>
+
+          <p>
+            A C++ application was developed in a DirectX 11 framework that enables the procedural generation of terrain using
+            a recursive implementation of the midpoint displacement (diamon-square) algorithm, sine and cosine waves and random height values.            
+          </p>
+          <p>
+            Post-processing filters - grayscale, gaussian blur, bloom and vignette - were also implemented using shader programming.          
+          </p>
+          <p>
+            A simple shooting mechanic for destorying animated floating orbs (achieved via Perlin noise-based vertex displacement and
+            propagation of sine waves applied to sphere models) using ray-sphere and sphere-sphere intersection tests was added.            
+          </p>
+          <p>
+            The terrain is able to be modified via user-defined tiling, amplitude and roughness parameters.
+          </p>
+
+          <p>Features:</p>
+          <ul>
+            <li>Midpoint displacement (diamond-square) terrain generation</li>
+            <li>Slope-based texturing</li>
+            <li>CPU-based terrain smoothing</li>
+            <li>Post-processing</li>
+            <li>Ray-sphere intersection</li>
+            <li>Sphere-sphere intersection</li>
+            <li>Perlin noise-based vertex displacement</li>
+          </ul>  
+
           <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
+            <span class="tag">C++</span>
+            <span class="tag">DirectX 11</span>
+            <span class="tag">HLSL</span>
           </div>
         </div>
 
@@ -393,33 +436,53 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Reinforcement Learning Snake</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
         <div id="project-4-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="img/carousel/reinforcement-learning-snake/1.gif">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="img/carousel/reinforcement-learning-snake/2.png">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+          <figure class="image is-16y9 carousel-cell">
+            <img src="img/carousel/reinforcement-learning-snake/3.png">
           </figure>
         </div>
 
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
+          <p>          
+            <a href="hhttps://github.com/lewisconnolly/q-learning-snake">github</a>
+          </p>
+
+          <p>
+            A C++ application was developed, leveraging the SDL library, that applies a Q-learning reinforcement learning algorithm to a Snake-type game.             
+          </p>
+
+          <p>
+            Reinforcement learning is a machine learning paradigm that involves training an agent by rewarding the actions it
+            takes, chosen based on the current state of its environment, with the goal of the agent being to maximise its cumulative
+            reward.
+          </p>
+
+          <p>
+            Q-learning is an iterative solution that finds the optimal policy for agent behaviour that yields the greatest reward by
+            factoring both current rewards and potential future rewards into an agent's decision making.
+          </p>
+
+          <p> Features: </p>
+          <ul>
+            <li>Reinforcement learning</li>
+            <li>AI agent training</li>
+            <li>2D collision detection</li>            
+          </ul>  
+
           <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
+            <span class="tag">C++</span>
+            <span class="tag">SDL</span>
+            <span class="tag">AI</span>
           </div>
         </div>
 
@@ -434,33 +497,57 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Client-server pong</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
         <div id="project-5-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/client-server-pong/1.gif">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/client-server-pong/2.png">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+          <figure class="image is-1by1 carousel-cell">
+            <img src="img/carousel/client-server-pong/3.png">
           </figure>
         </div>
 
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
+          <p>          
+            <a href="hhttps://github.com/lewisconnolly/network-pong">github</a>
+          </p>
+
+          <p>
+            A version of the classic game Pong was implemented in C++, leveraging the SDL library and SFML API (for network functionality),
+            that can be played over a network.
+          </p>
+          <p>
+            A server computes the position of the ball and sends position updates to clients using UDP. Clients send their paddle positions
+            to the server which forwards them to the opponent client, also using UDP. Session initialisation traffic and score updates are
+            sent using TCP. The application is able to handle client disconnections and reconnections.
+          </p>
+          <p>
+            Prediction and interpolation are used for the ball (client side) and paddles (client and server side) to reduce network traffic
+            and to enhance the player experience by reducing jarring movement during periods of suboptimal network conditions, such as latency,
+            packet loss and out of order delivery.  
+          </p>
+
+          <p> Features: </p>
+          <ul>
+            <li>Network multiplayer</li>
+            <li>Client-server architecture</li>
+            <li>Prediction and interpolation</li>
+            <li>2D collision detection</li>            
+            <li>Degraded connection handling</li>            
+          </ul>  
+
           <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
+            <span class="tag">C++</span>
+            <span class="tag">SDL</span>
+            <span class="tag">SFML</span>
+            <span class="tag">UDP</span>
+            <span class="tag">TCP</span>
           </div>
         </div>
 
@@ -475,33 +562,53 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Graphics Programming</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
         <div id="project-6-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/graphics-programming/1.gif">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/graphics-programming/2.png">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/graphics-programming/3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/graphics-programming/4.png">
           </figure>
         </div>
 
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
+          <p>          
+            <a href="hhttps://github.com/lewisconnolly/bonfire-scene">github</a>
+          </p>
+
+          <p>
+            An explorable scene featuring a snow-covered landscape and an animated bonfire was created with C++ in a DirectX 11 framework,
+            making use of matrix transformations, shader programming, textures and public domain models.
+          </p>
+
+          <p> Features: </p>
+          <ul>
+            <li>Blinn-Phong lighting</li>
+            <li>Sky box</li>
+            <li>Shadow mapping</li>
+            <li>Normal mapping</li>            
+            <li>Refraction</li>            
+            <li>Point lights</li>            
+            <li>Scrolling texture animation</li>
+            <li>Model and texture loading</li>
+            <li>Audio</li>            
+          </ul>  
+
           <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
+            <span class="tag">C++</span>
+            <span class="tag">DirectX 11</span>
+            <span class="tag">HLSL</span>
+            <span class="tag">Blender</span>
           </div>
         </div>
 
