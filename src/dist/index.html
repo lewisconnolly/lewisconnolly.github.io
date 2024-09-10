@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>lewisconnolly.github.io</title>
+  <title>Lewis Connolly | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.bundle.css">
@@ -73,11 +73,11 @@
       <h1 class="title">About Me</h1>
       <hr />
       <p>
-        Experienced IT professional with a Master's in Computer Games Technology from Abertay University and an Honours degree in Computer Science. Over 10 years in IT operations, specialising in automation across diverse technologies. Strong teamwork and communication skills, with a passion for continuous learning. Currently developing personal projects to enhance games development expertise.
+        Experienced IT professional with a Master's in Computer Games Technology from Abertay University and an Honours degree in Computer Science. Over 10 years in IT Operations, specialising in automation across diverse technologies. Strong teamwork and communication skills, with a passion for continuous learning. Currently developing personal projects to enhance game development expertise.
       </p>
       <br/>
       <p>
-        Seeking a full-time games development programming role.
+        Currently seeking a full-time game development programming role.
       </p>
     </div>
   </section>  
@@ -95,14 +95,24 @@
                 <figure class="image is-3by2">
                   <img class="modal-trigger" data-target="project-1-modal" src="img/procedural-caves-cover.png">
                 </figure>
-              </article>
+                <p class="subtitle">
+                  <br/>
+                  <a href="https://github.com/lewisconnolly/procedural-caves"><i class="fab fa-1x fa-github"></i></a>
+                </p>
+              </article>                        
             </div>
             <div class="tile is-parent">
               <article class="tile is-child notification">
                 <p class="title">Viva Las Mages</p>
                 <figure class="image is-4by3">
                   <img class="modal-trigger" data-target="project-2-modal" src="img/viva-las-mages-cover.png">
-                </figure>
+                </figure>                
+                <p class="subtitle">
+                  <br/>
+                  <a href="https://github.com/lewisconnolly/viva-las-mages"><i class="fab fa-1x fa-github"></i></a>
+                  &nbsp;
+                  <a href="https://vulpecula-games.itch.io/viva-las-mages"><i class="fab fa-1x fa-itch-io"></i></a>
+                </p>
               </article>
             </div>
             <div class="tile is-parent">
@@ -111,6 +121,10 @@
                 <figure class="image is-4by3">
                   <img class="modal-trigger" data-target="project-3-modal" src="img/terrain-generation-cover.png">
                 </figure>
+                <p class="subtitle">
+                  <br/>
+                  <a href="https://github.com/lewisconnolly/procedural-terrain"><i class="fab fa-1x fa-github"></i></a>
+                </p>
               </article>
             </div>
           </div>
@@ -125,6 +139,10 @@
                 <figure class="image is-4by3">
                   <img class="modal-trigger" data-target="project-4-modal" src="img/reinforcement-learning-snake-cover.png">
                 </figure>
+                <p class="subtitle">
+                  <br/>
+                  <a href="https://github.com/lewisconnolly/q-learning-snake"><i class="fab fa-1x fa-github"></i></a>
+                </p>
               </article>
             </div>
             <div class="tile is-parent">
@@ -133,6 +151,10 @@
                 <figure class="image is-16by9">
                   <img class="modal-trigger" data-target="project-5-modal" src="img/client-server-pong-cover.png">
                 </figure>
+                <p class="subtitle">
+                  <br/>
+                  <a href="https://github.com/lewisconnolly/network-pong"><i class="fab fa-1x fa-github"></i></a>
+                </p>
               </article>
             </div>
             <div class="tile is-parent">
@@ -141,6 +163,10 @@
                 <figure class="image is-16by9">
                   <img class="modal-trigger" data-target="project-6-modal" src="img/graphics-programming-cover.png">
                 </figure>
+                <p class="subtitle">
+                  <br/>
+                  <a href="https://github.com/lewisconnolly/bonfire-scene"><i class="fab fa-1x fa-github"></i></a>
+                </p>
               </article>
             </div>
           </div>
@@ -163,7 +189,7 @@
             </div>
             <div class="media-content">
               <p class="title is-4">Abertay University</p>
-              <p class="subtitle is-6"><br/>MSc Computer Games Technology (<time datetime="2023-9">September 2023</time>&ndash;<time
+              <p class="subtitle is-6"><br/>MSc Computer Games Technology (<time datetime="2023-9">September 2023</time> &ndash; <time
                 datetime="2024-9">September 2024</time>)</p>
             </div>
           </div>
@@ -193,7 +219,7 @@
             </div>
             <div class="media-content">
               <p class="title is-4">Heriot-Watt University</p>
-              <p class="subtitle is-6"><br/>BSc Hons Computer Science (<time datetime="2008-9">September 2008</time>&ndash;<time
+              <p class="subtitle is-6"><br/>BSc Hons Computer Science (<time datetime="2008-9">September 2008</time> &ndash; <time
                 datetime="2012-9">September 2012</time>)</p>
             </div>
           </div>          
@@ -271,13 +297,8 @@
         </div>
 
         <div class="content">
-
           <p>
-          <a href="https://github.com/lewisconnolly/procedural-caves">github</a><br/>
-          </p>
-
-          <p>
-            As part of a Masters dissertation project, a tool was developed within Unity to procedurally generate 3D caves 
+            As part of a dissertation project, a tool was developed within Unity to procedurally generate 3D caves 
             containing stalagmites and stalactites using cellular automata and isosurface algorithms.
           </p>
           <p>
@@ -289,14 +310,14 @@
           <p> Features: </p>
           <ul>
             <li>Procedural content generation</li>
-            <li>Cellular automata</li>
-            <li>Marching cubes 33 (topologically correct variant)</li>
-            <li>Dual contouring</li>
+            <li>Multithreaded cellular automata algorithm</li>
+            <li>Marching Cubes 33 algorithm (topologically correct variant)</li>
+            <li>Dual Contouring algorithm</li>
             <li>Novel stalagmite and stalactite generation</li>
             <li>Tessellation</li>
             <li>Phong smoothing</li>
             <li>Perlin noise-based vertex displacement</li>
-            <li>Texture blending</li>
+            <li>Texture blending based on surface angle</li>
           </ul>  
 
           <div class="tags">
@@ -340,14 +361,10 @@
         </div>
 
         <div class="content">
+          <p> Cover artwork by <a href="https://www.artstation.com/ockopus">artstation.com/ockopus</a></p>
 
           <p>
-          <a href="https://vulpecula-games.itch.io/viva-las-mages">itch.io</a><br/>
-          <a href="https://github.com/lewisconnolly/viva-las-mages">github</a>
-          </p>
-
-          <p>
-            As the lead programmer and co-designer in a team of 7 consisting of artists, designers and an audio specialist,
+            As the lead programmer and co-designer in a team of 7 (consisting of artists, designers and an audio specialist),
             developed a vertical slice of a game over 12 weeks based on a novel concept featuring dungeon exploration, card
             playing, and risk-reward mechanics.
           </p>
@@ -412,10 +429,6 @@
         </div>
 
         <div class="content">
-          <p>          
-          <a href="https://github.com/lewisconnolly/procedural-terrain">github</a>
-          </p>
-
           <p>
             A C++ application was developed in a DirectX 11 framework that enables the procedural generation of terrain using
             a recursive implementation of the midpoint displacement (diamon-square) algorithm, sine and cosine waves and random height values.            
@@ -436,7 +449,7 @@
             <li>Midpoint displacement (diamond-square) terrain generation</li>
             <li>Slope-based texturing</li>
             <li>CPU-based terrain smoothing</li>
-            <li>Post-processing</li>
+            <li>Post-processing image filters</li>
             <li>Ray-sphere intersection</li>
             <li>Sphere-sphere intersection</li>
             <li>Perlin noise-based vertex displacement</li>
@@ -477,10 +490,6 @@
         </div>
 
         <div class="content">
-          <p>          
-            <a href="hhttps://github.com/lewisconnolly/q-learning-snake">github</a>
-          </p>
-
           <p>
             A C++ application was developed, leveraging the SDL library, that applies a Q-learning reinforcement learning algorithm to a Snake-type game.             
           </p>
@@ -521,7 +530,7 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Client-server pong</p>
+        <p class="modal-card-title">Client-server Pong</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
@@ -538,10 +547,6 @@
         </div>
 
         <div class="content">
-          <p>          
-            <a href="hhttps://github.com/lewisconnolly/network-pong">github</a>
-          </p>
-
           <p>
             A version of the classic game Pong was implemented in C++, leveraging the SDL library and SFML API (for network functionality),
             that can be played over a network.
@@ -606,10 +611,6 @@
         </div>
 
         <div class="content">
-          <p>          
-            <a href="hhttps://github.com/lewisconnolly/bonfire-scene">github</a>
-          </p>
-
           <p>
             An explorable scene featuring a snow-covered landscape and an animated bonfire was created with C++ in a DirectX 11 framework,
             making use of matrix transformations, shader programming, textures and public domain models.
