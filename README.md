@@ -1,3 +1,3 @@
 # lewisconnolly.github.io
-Forked from [devfolio](from https://github.com/mmacneil/devfolio)
+Forked from [devfolio](https://github.com/mmacneil/devfolio)
  
