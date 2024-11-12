@@ -31,11 +31,38 @@ b {
     font-weight:normal;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.4)
 }
+.youtube-embed {
+    display:block;
+    margin: auto;
+}
 // import everything - alternatively import just what you need: https://bulma.io/documentation/overview/modular/
 @import "~bulma/bulma"; 
 
 // override specific bulma styles
 .section {padding: 2.15rem 1.5rem}
+  
+.tile > .image {
+    width: 100%;
+    display: block; /* Changed from flex to block */
+    position: relative; /* Added for Bulma compatibility */
+}
+
+.tile > .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the container properly */
+    position: absolute; /* Added for Bulma's aspect ratio handling */
+    top: 0;
+    left: 0;
+}
+
+.tile > .subtitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 
 @function theme-color($key: "primary") {
     @return map-get($theme-colors, $key);
@@ -44,5 +71,3 @@ b {
 // Flickity - begin
 .carousel-cell {width:100%}
 // Flickity - end
-
- 
