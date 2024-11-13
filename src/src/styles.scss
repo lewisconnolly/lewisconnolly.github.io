@@ -55,29 +55,27 @@ b {
     .youtube-embed {
         display:block;
         margin: auto;
-        width: 200px;
-        height: 50px;
+        width: 300px;
+        height: 250px;
     }
 }
 
 // override specific bulma styles
-.section {padding: 2.15rem 1.5rem}  
+.section { padding: 2.15rem 1.5rem; }  
 
 .cell {
     display: grid;
     height: 100%;
 }
 
-.box .subtitle {
-    margin-top: 0.25em;
-}
+.box .subtitle { margin-top: 0.25em }
 
 @function theme-color($key: "primary") {
     @return map-get($theme-colors, $key);
 }
 
 // Flickity - begin
-.carousel-cell {width: 100%;  text-align: center;}
+.carousel-cell {width: 100% }
 .flickity-button {
     background: #333;
 }
