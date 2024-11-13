@@ -62,7 +62,8 @@ function initCarousel(id) {
     return new Flickity('#' + id, {
         imagesLoaded: true,
         adaptiveHeight: true, // https://github.com/metafizzy/flickity/issues/11
-        prevNextButtons: false
+        prevNextButtons: true,
+        cellAlign: 'center'
     });
 }
 

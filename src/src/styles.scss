@@ -16,30 +16,30 @@ $spaces: ("0": 0, "1": 1.65rem, "2": 1.75rem);
 
 @use "sass:map";
 
-$margin-default: map.get($spaces, "2") map.get($spaces, "0");
-
 // https://github.com/metafizzy/flickity/issues/754
 @import "~flickity/css/flickity.css";
 
 // Import Lato Google Font
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
+$margin-default: map.get($spaces, "2") map.get($spaces, "0");
+
 // Custom Styles
-.card-gap {margin-top:1.75rem}
+.card-gap { margin-top: 1.75rem; }
 .modal-trigger { cursor: pointer; }
-a.icon > strong {margin-left:.25rem}
-.modal-card-body div.content {margin:$margin-default}
+a.icon > strong { margin-left:.25rem; }
+.modal-card-body div.content { margin:$margin-default; }
  
 b {
     font-weight:normal;
-    text-shadow: 0px 1px 2px rgba(0,0,0,0.4)
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         b {
             font-weight:normal;
-            text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.8)
+            text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.8);
         }
     }
 }
@@ -47,6 +47,17 @@ b {
 .youtube-embed {
     display:block;
     margin: auto;
+    width: 500px;
+    height: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+    .youtube-embed {
+        display:block;
+        margin: auto;
+        width: 200px;
+        height: 50px;
+    }
 }
 
 // override specific bulma styles
@@ -66,5 +77,28 @@ b {
 }
 
 // Flickity - begin
-.carousel-cell {width:100%}
+.carousel-cell {width: 100%;  text-align: center;}
+.flickity-button {
+    background: #333;
+}
+.flickity-button:hover {
+    background: $cyan;
+}
+
+.flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+/* icon color */
+.flickity-button-icon {
+    fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+    left: -20px;
+}
+.flickity-prev-next-button.next {
+    right: -20px;
+}
 // Flickity - end
