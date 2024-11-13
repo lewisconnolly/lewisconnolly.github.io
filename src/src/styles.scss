@@ -29,20 +29,40 @@ $margin-default: map.get($spaces, "2") map.get($spaces, "0");
 .modal-trigger { cursor: pointer; }
 a.icon > strong { margin-left:.25rem; }
 .modal-card-body div.content { margin:$margin-default; }
- 
+
 b {
+    --a: -45deg; /* control the angle */
+    --t: .13em; /* thickness of the underline */ 
     font-weight:normal;
-    text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+    --_s: calc(var(--t)*cos(var(--a)));
+    background:
+      linear-gradient(var(--a),#0000 var(--_s),currentColor 0 calc(100% - var(--_s)),#0000 0) 
+      bottom/var(--i,100%) var(--t) no-repeat;
+    padding: 0 0 calc(var(--t) + .1em);    
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    transition: .3s;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        b {
-            font-weight:normal;
-            text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.8);
-        }
-    }
+b:hover span {
+    --i: 100%;
 }
+
+.about-text { line-height: 200%; word-spacing: 4px; }
+
+// b {
+//     font-weight:normal;
+//     text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+// }
+
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         b {
+//             font-weight:normal;
+//             text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.8);
+//         }
+//     }
+// }
 
 .youtube-embed {
     display:block;
@@ -79,9 +99,9 @@ b {
 .flickity-button {
     background: #333;
 }
-// .flickity-button:hover {
-//     background: $cyan;
-// }
+.flickity-button:hover {
+     background: #333;
+}
 .flickity-prev-next-button {
     width: 30px;
     height: 30px;
