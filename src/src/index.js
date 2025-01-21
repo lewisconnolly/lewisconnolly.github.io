@@ -11,6 +11,7 @@ var rootEl = document.documentElement;
 var $modals = getAll('.modal');
 var $modalTriggers = getAll('.modal-trigger');
 var $modalCloses = getAll('.modal-card-head .delete, .modal-card-foot .button');
+var $videos = getAll('.youtube-embed');
 
 if ($modalTriggers.length > 0) {
     $modalTriggers.forEach(function ($el) {
@@ -25,6 +26,7 @@ if ($modalCloses.length > 0) {
     $modalCloses.forEach(function ($el) {
         $el.addEventListener('click', function () {
             closeModals();
+            pauseVideos();
         });
     });
 }
@@ -53,7 +55,20 @@ function closeModals() {
     rootEl.classList.remove('is-clipped');
     $modals.forEach(function ($el) {
         $el.classList.remove('is-active');
-    });
+    });    
+}
+
+function pauseVideos() {    
+    $videos.forEach(function ($el) {
+        try {
+            $el.contentWindow.postMessage(JSON.stringify({
+                event: 'command',
+                func: 'pauseVideo'
+            }), '*');
+        } catch (error) {
+            console.error('Error pausing YouTube video:', error);
+        }
+    });       
 }
 
 // Functions

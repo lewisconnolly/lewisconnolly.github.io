@@ -31,23 +31,23 @@ a.icon > strong { margin-left:.25rem; }
 .modal-card-body div.content { margin:$margin-default; }
 h1.title { text-align: center; }
 
-b {
-    --a: -45deg; /* control the angle */
-    --t: .13em; /* thickness of the underline */ 
-    font-weight:normal;
-    --_s: calc(var(--t)*cos(var(--a)));
-    background:
-      linear-gradient(var(--a),#0000 var(--_s),currentColor 0 calc(100% - var(--_s)),#0000 0) 
-      bottom/var(--i,100%) var(--t) no-repeat;
-    padding: 0 0 calc(var(--t) + .1em);    
-    -webkit-box-decoration-break: clone;
-            box-decoration-break: clone;
-    transition: .3s;
-}
+// b {
+//     --a: -45deg; /* control the angle */
+//     --t: .13em; /* thickness of the underline */ 
+//     font-weight:normal;
+//     --_s: calc(var(--t)*cos(var(--a)));
+//     background:
+//       linear-gradient(var(--a),#0000 var(--_s),currentColor 0 calc(100% - var(--_s)),#0000 0) 
+//       bottom/var(--i,100%) var(--t) no-repeat;
+//     padding: 0 0 calc(var(--t) + .1em);    
+//     -webkit-box-decoration-break: clone;
+//             box-decoration-break: clone;
+//     transition: .3s;
+// }
 
-b:hover span {
-    --i: 100%;
-}
+// b:hover span {
+//     --i: 100%;
+// }
 
 .about-text {
     line-height: 200%;

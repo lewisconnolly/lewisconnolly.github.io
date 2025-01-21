@@ -1,0 +1,3 @@
+cd C:\Users\lewis\Projects\GitHub Repos\lewisconnolly.github.io\src
+
+npm run build
